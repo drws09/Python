@@ -2,6 +2,7 @@
 
 def plusMinus(arr):
     plus_count = minus_count = zero_count = 0
+    num_items = len(arr)
 
     for x in arr:
         if x > 0:
@@ -11,7 +12,7 @@ def plusMinus(arr):
         else:
             zero_count += 1
 
-    plus_median, minus_median, zero_median = plus_count / len(arr), minus_count / len(arr), zero_count / len(arr)
+    plus_median, minus_median, zero_median = plus_count/num_items, minus_count/num_items, zero_count/num_items
 
     print(f'{plus_median:.6f}')
     print(f'{minus_median:.6f}')
