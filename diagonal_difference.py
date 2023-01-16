@@ -11,11 +11,6 @@ def diagonalDifference(arr):
         fw += 1
         sumB += x[bw]
         bw -= 1
-
+        
     diff = abs(sumA - sumB)
-    print(diff)
     return diff
-
-arr = [[-1, 2, 3, 4, -5], [-1, 2, -3, -4, 5], [-1, -2, 3, 4, 5], [-1, 2, 3, 4, -5], [1, -2, -3, -4, -5]]
-
-diagonalDifference(arr)
